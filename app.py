@@ -22,12 +22,12 @@ uploaded_file = st.sidebar.file_uploader("Choose a file")
 if uploaded_file is not None:
     xgbModel = pickle.load(uploaded_file)
     st.sidebar.write("模型載入成功！")
-# else:
-#     with open('../model/xgb-model.pickle', 'rb') as f:
-#         xgbModel = pickle.load(f)
 else:
-    ng_info_url = 'https://drive.google.com/uc?export=download&confirm=no_antivirus&id=1sxhm5QyiMIoO7cWHzGP2aVm1ek1UIRfO'
-    xgbModel = fetchPickleFileFromHttp(ng_info_url)
+    with open('./model/xgb-model.pickle', 'rb') as f:
+        xgbModel = pickle.load(f)
+# else:
+#     ng_info_url = 'https://drive.google.com/uc?export=download&confirm=no_antivirus&id=1sxhm5QyiMIoO7cWHzGP2aVm1ek1UIRfO'
+#     xgbModel = fetchPickleFileFromHttp(ng_info_url)
 
 st.header('👩🏻‍🔬 品質預測與配方分析')
 st.write('**製程參數**:')
