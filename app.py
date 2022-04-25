@@ -29,7 +29,7 @@ else:
 #     ng_info_url = 'https://drive.google.com/uc?export=download&confirm=no_antivirus&id=1sxhm5QyiMIoO7cWHzGP2aVm1ek1UIRfO'
 #     xgbModel = fetchPickleFileFromHttp(ng_info_url)
 
-st.header('👩🏻‍🔬 品質預測與配方分析')
+st.header('👩🏻‍🔬 產品雜質預測與分析')
 st.write('**製程參數**:')
 # get inputs
 cols1 = st.columns(4)
