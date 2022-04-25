@@ -23,7 +23,7 @@ if uploaded_file is not None:
     xgbModel = pickle.load(uploaded_file)
     st.sidebar.write("模型載入成功！")
 else:
-    with open('../model/xgb-model.pickle', 'rb') as f:
+    with open('./model/xgb-model.pickle', 'rb') as f:
         xgbModel = pickle.load(f)
 # else:
 #     ng_info_url = 'https://drive.google.com/uc?export=download&confirm=no_antivirus&id=1sxhm5QyiMIoO7cWHzGP2aVm1ek1UIRfO'
