@@ -1,3 +1,4 @@
+![](./screenshot/demo.gif)
 
 ## 安裝相依套件
 
